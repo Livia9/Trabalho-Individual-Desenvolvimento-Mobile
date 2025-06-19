@@ -1,20 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { View, Text, Image, Button } from 'react-native';
+import { styles } from './styles';
+import logo from './assets/LarkPlayer.png'
 
-export default function App() {
+const App = () => {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+      <View style={styles.navbar}>
+        {/* nao preciso de pasta navbar pq so essa tela tem essa, a outra sera input */}
+        <Image source={logo} style={styles.image} />
+        <Text style={styles.title}>Lark Player</Text>
+        <Button
+          title="Clique aqui"
+          onPress={() => alert('Você clicou!')}
+        />
+        <Text style={styles.subtitulo}> Musica Testando</Text>
+
+      </View>
+      <Button
+        title="Clique aqui"
+        onPress={() => alert('Você clicou!')}
+      />
+      <Text style={styles.subtitulo}> Musica Testando</Text>
+    </View >
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
