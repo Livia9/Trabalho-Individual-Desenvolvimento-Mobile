@@ -10,13 +10,10 @@ export const styles = StyleSheet.create({
     navbar: {
         flexDirection: 'row',
         textAlign: 'center',
-        justifyContent: 'space-between',
-        alignItems: 'stretch',
-
+        justifyContent: 'space-between'
     },
     title: {
-        color: '#000',
-        fontSize: 35,
+        fontSize: 38,
         fontWeight: 'bold'
     },
     image: {
@@ -45,6 +42,7 @@ export const styles = StyleSheet.create({
     },
     botao: {
         color: 'black'
+
     },
     touchable: {
         backgroundColor: '#fff',
@@ -55,7 +53,6 @@ export const styles = StyleSheet.create({
     },
     btmusica: {
         backgroundColor: '#FF00FF',
-        color: 'white',
         padding: 8,
         borderRadius: 20,
         marginTop: 5,
@@ -64,10 +61,10 @@ export const styles = StyleSheet.create({
     },
     botaovideo: {
         padding: 6,
-        borderRadius: 20,
+        borderRadius: 25,
         marginTop: 5,
         marginRight: 10,
-        marginLeft: 5,
+        marginLeft: 1,
         backgroundColor: 'white',
         flexDirection: 'row',
         alignItems: 'center'
@@ -76,7 +73,41 @@ export const styles = StyleSheet.create({
         width: 20,
         height: 20,
         marginRight: 8
+    },
+    // capa: {
+    //     width: 60,
+    //     height: 60,
+    //     borderRadius: 15,
+    //     marginTop: 20
+    // },
+    // titulomusica: {
+    //     fontWeight: 'bold',
+    // },
+
+    musica: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        padding: 10
+    },
+    capa: {
+        width: 60,
+        height: 60,
+        borderRadius: 15,
+        marginRight: 10
+    },
+    info: {
+        flex: 1// garante que os textos ocupem o espaço restante
+    },
+    titulomusica: {
+        fontWeight: 'bold',
+        fontSize: 14,
+        color: 'black'
+    },
+    artista: {
+        fontSize: 12,
+        color: 'gray'
     }
+
 
 
 })
