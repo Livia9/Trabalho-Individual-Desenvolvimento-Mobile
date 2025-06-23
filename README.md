@@ -5,8 +5,8 @@ Este projeto é um **clone de duas telas** do aplicativo **Lark Player**, desenv
 ## 🧩 Tecnologias Utilizadas
 - React Native
 - TypeScript
-- Componentes: `Image`, `Text`, `TextInput`, `View`
-- Estilização com `StyleSheet` externo
+- Componentes: Image, Text, TextInput, View
+- Estilização com StyleSheet externo
 
 ## 🖼️ Telas Clonadas
 
