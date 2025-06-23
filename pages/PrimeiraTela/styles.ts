@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#FCDDF2',
         paddingTop: 60,
-        paddingHorizontal: 30
+        paddingHorizontal: 10
     },
     navbar: {
         flexDirection: 'row',
@@ -14,7 +14,8 @@ export const styles = StyleSheet.create({
     },
     title: {
         fontSize: 38,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        marginRight: 50
     },
     image: {
         width: 50,
@@ -25,12 +26,14 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     pesquisar: {
-        width: 30,
-        height: 30
+        width: 40,
+        height: 30,
+        marginRight: 10
     },
     ordem: {
-        width: 30,
-        height: 30
+        width: 40,
+        height: 30,
+        marginRight: 10
     },
     settings: {
         width: 30,
@@ -74,16 +77,6 @@ export const styles = StyleSheet.create({
         height: 20,
         marginRight: 8
     },
-    // capa: {
-    //     width: 60,
-    //     height: 60,
-    //     borderRadius: 15,
-    //     marginTop: 20
-    // },
-    // titulomusica: {
-    //     fontWeight: 'bold',
-    // },
-
     musica: {
         flexDirection: 'row',
         alignItems: 'center',
@@ -93,10 +86,10 @@ export const styles = StyleSheet.create({
         width: 60,
         height: 60,
         borderRadius: 15,
-        marginRight: 10
+        marginRight: 10,
     },
     info: {
-        flex: 1// garante que os textos ocupem o espaço restante
+        flex: 1
     },
     titulomusica: {
         fontWeight: 'bold',
@@ -106,8 +99,16 @@ export const styles = StyleSheet.create({
     artista: {
         fontSize: 12,
         color: 'gray'
+    },
+    play: {
+        width: 40,
+        height: 40,
+        margin: 10
+    },
+    tocando: {
+        backgroundColor: '#FFF6D5',
+        borderRadius: 20,
+        flex: 1
     }
-
-
 
 })
