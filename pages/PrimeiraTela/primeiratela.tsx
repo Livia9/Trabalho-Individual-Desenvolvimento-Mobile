@@ -24,7 +24,6 @@ const PrimeiraTela = () => {
 
         <View style={styles.container}>
             <View style={styles.navbar}>
-                {/* nao preciso de pasta navbar pq so essa tela tem essa, a outra sera input */}
                 <Image source={logo} style={styles.image} />
                 <Text style={styles.title}>Lark Player</Text>
                 <Image source={pesquisar} style={styles.pesquisar} />

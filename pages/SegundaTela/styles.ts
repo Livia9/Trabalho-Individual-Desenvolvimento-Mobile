@@ -4,8 +4,7 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#FCDDF2',
-        paddingTop: 60,
-        // paddingHorizontal: 10
+        paddingTop: 60
     },
     play: {
         width: 40,
