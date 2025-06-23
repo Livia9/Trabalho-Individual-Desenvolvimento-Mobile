@@ -4,8 +4,8 @@ import SegundaTela from "./pages/SegundaTela/segundatela";
 
 const App = () => {
   return (
-    // <PrimeiraTela />
-    <SegundaTela />
+    <PrimeiraTela />
+    // <SegundaTela />
   );
 }
 export default App;

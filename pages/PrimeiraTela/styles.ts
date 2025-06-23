@@ -4,8 +4,7 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#FCDDF2',
-        paddingTop: 60,
-        paddingHorizontal: 10
+        paddingTop: 60
     },
     navbar: {
         flexDirection: 'row',
@@ -44,11 +43,11 @@ export const styles = StyleSheet.create({
         alignItems: 'center'
     },
     botao: {
-        color: 'black'
+        color: '#6D4C64'
 
     },
     touchable: {
-        backgroundColor: '#fff',
+        backgroundColor: '#FBEFF7',
         padding: 8,
         borderRadius: 20,
         marginTop: 5,
@@ -68,7 +67,7 @@ export const styles = StyleSheet.create({
         marginTop: 5,
         marginRight: 10,
         marginLeft: 1,
-        backgroundColor: 'white',
+        backgroundColor: '#FBEFF7',
         flexDirection: 'row',
         alignItems: 'center'
     },

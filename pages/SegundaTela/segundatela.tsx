@@ -7,6 +7,11 @@ import pesquisar from '../../assets/pesquisar.png'
 import seta from '../../assets/seta.png'
 import lixeira from '../../assets/lixeira.png'
 import info from '../../assets/info.png'
+import youtube from '../../assets/Youtube_logo.png'
+import instagram from '../../assets/Instagram_icon.png'
+import facebook from '../../assets/Facebook_icon.avif'
+import soundcloud from '../../assets/soundcloud.webp'
+import twitter from '../../assets/twittericon.avif'
 
 const SegundaTela = () => {
   return (
@@ -19,34 +24,59 @@ const SegundaTela = () => {
 
       </View>
 
-      <Text style={styles.titulo}>Histórico</Text>
-      <Image source={lixeira} style={styles.lixeira} />
+      <View style={styles.conteudo}>
 
-      <View style={styles.ultimapesq}>
-        <TouchableOpacity
-          onPress={() => alert('Botão ultima pesquisa 1!')}
-          style={styles.touchable}
-        >
-          <Text>the boy is mine</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => alert('Botão ultima pesquisa 2!')}
-          style={styles.touchable}
-        >
-          <Text>never lose me</Text>
-        </TouchableOpacity>
+        <View style={styles.secoes}>
+          <Text style={styles.titulo}>Histórico</Text>
+          <Image source={lixeira} style={styles.iconeslaterais} />
+        </View>
+
+        <View style={styles.ultimapesq}>
+
+          <TouchableOpacity
+            onPress={() => alert('Botão ultima pesquisa 1!')}
+            style={styles.touchable}
+          >
+            <Text style={styles.nomepesquisa}>the boy is mine</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => alert('Botão ultima pesquisa 2!')}
+            style={styles.touchable}
+          >
+            <Text style={styles.nomepesquisa}>never lose me</Text>
+          </TouchableOpacity>
+
+        </View>
+
+        <View style={styles.secoes}>
+
+          <Text style={styles.titulo}> Sites</Text>
+          <Image source={info} style={styles.iconeslaterais} />
+        </View>
+        <View style={styles.sites}>
+          <View style={styles.item}>
+            <Image source={youtube} style={styles.redessociais} />
+            <Text style={styles.nomeRede}>Youtube</Text>
+          </View>
+          <View style={styles.item}>
+            <Image source={instagram} style={styles.redessociais} />
+            <Text style={styles.nomeRede}>Instagram</Text>
+          </View>
+          <View style={styles.item}>
+            <Image source={facebook} style={styles.redessociais} />
+            <Text style={styles.nomeRede}>Facebook</Text>
+          </View>
+          <View style={styles.item}>
+            <Image source={soundcloud} style={styles.redessociais} />
+            <Text style={styles.nomeRede}>SoundCloud</Text>
+          </View>
+          <View style={styles.item}>
+            <Image source={twitter} style={styles.redessociais} />
+            <Text style={styles.nomeRede}>X</Text>
+          </View>
+        </View>
+
       </View>
-
-      <Text style={styles.titulo}> Sites</Text>
-      <Image source={info} style={styles.lixeira} />
-
-      {/* trocar nome style */}
-      <Text>Youtube</Text>
-      <Text>Instagram</Text>
-      <Text>Facebook</Text>
-      <Text>SoundCloud</Text>
-      <Text>X</Text>
-
       <View style={styles.tocando}>
         <View style={styles.musica}>
           <Image source={voltacp} style={styles.capa} />
@@ -59,7 +89,7 @@ const SegundaTela = () => {
         </View>
       </View>
 
-    </View>
+    </View >
   )
 }
 export default SegundaTela;
